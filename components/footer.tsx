@@ -1,133 +1,110 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react"
+import Image from "next/image"
+import { Github, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-background">
+    <footer className="w-full border-t bg-background">
       <div className="container px-4 md:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl">Company</span>
+              <div className="relative h-8 w-8">
+                <Image src="/images/logo.png" alt="LastAppStanding Logo" fill className="object-contain" />
+              </div>
+              <span className="font-bold">LastAppStanding</span>
             </Link>
-            <p className="text-sm text-muted-foreground">Empowering businesses with innovative solutions since 2023.</p>
+            <p className="text-sm text-muted-foreground">Powering the future with generative AI solutions.</p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Facebook">
-                  <Facebook className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="Instagram">
-                  <Instagram className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="#" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
-                </Link>
-              </Button>
+              <Link href="https://twitter.com" target="_blank" rel="noreferrer">
+                <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link href="https://github.com" target="_blank" rel="noreferrer">
+                <Github className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                <span className="sr-only">GitHub</span>
+              </Link>
+              <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
             </div>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/company/about" className="text-sm text-muted-foreground hover:text-foreground">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/company/careers" className="text-sm text-muted-foreground hover:text-foreground">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/company/contact" className="text-sm text-muted-foreground hover:text-foreground">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+          <div className="flex flex-col space-y-4">
+            <div className="text-sm font-medium">Company</div>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">
+                About Us
+              </Link>
+              <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">
+                Contact
+              </Link>
+              <Link href="/careers" className="text-sm text-muted-foreground hover:text-primary">
+                Careers
+              </Link>
+              <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary">
+                Blog
+              </Link>
+            </nav>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/resources/blog" className="text-sm text-muted-foreground hover:text-foreground">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources/guides" className="text-sm text-muted-foreground hover:text-foreground">
-                  Guides
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources/support" className="text-sm text-muted-foreground hover:text-foreground">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/api-services/documentation"
-                  className="text-sm text-muted-foreground hover:text-foreground"
-                >
-                  Documentation
-                </Link>
-              </li>
-            </ul>
+          <div className="flex flex-col space-y-4">
+            <div className="text-sm font-medium">Products</div>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/products" className="text-sm text-muted-foreground hover:text-primary">
+                API Services
+              </Link>
+              <Link href="/pricing" className="text-sm text-muted-foreground hover:text-primary">
+                Pricing
+              </Link>
+              <Link href="/documentation" className="text-sm text-muted-foreground hover:text-primary">
+                Documentation
+              </Link>
+              <Link href="/integrations" className="text-sm text-muted-foreground hover:text-primary">
+                Integrations
+              </Link>
+            </nav>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/legal/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/terms-of-service" className="text-sm text-muted-foreground hover:text-foreground">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/security" className="text-sm text-muted-foreground hover:text-foreground">
-                  Security
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/compliance" className="text-sm text-muted-foreground hover:text-foreground">
-                  Compliance
-                </Link>
-              </li>
-            </ul>
+          <div className="flex flex-col space-y-4">
+            <div className="text-sm font-medium">Resources</div>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/documentation" className="text-sm text-muted-foreground hover:text-primary">
+                Documentation
+              </Link>
+              <Link href="/guides" className="text-sm text-muted-foreground hover:text-primary">
+                Guides
+              </Link>
+              <Link href="/api-reference" className="text-sm text-muted-foreground hover:text-primary">
+                API Reference
+              </Link>
+              <Link href="/support" className="text-sm text-muted-foreground hover:text-primary">
+                Support
+              </Link>
+            </nav>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <div className="text-sm font-medium">Legal</div>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary">
+                Terms of Service
+              </Link>
+              <Link href="/security" className="text-sm text-muted-foreground hover:text-primary">
+                Security
+              </Link>
+              <Link href="/compliance" className="text-sm text-muted-foreground hover:text-primary">
+                Compliance
+              </Link>
+            </nav>
           </div>
         </div>
         <div className="mt-12 border-t pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Company, Inc. All rights reserved.
+          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+            <p className="text-center text-sm text-muted-foreground md:text-left">
+              &copy; 2017 LastAppStanding. All rights reserved.
             </p>
-            <div className="flex flex-col md:flex-row gap-4 md:items-center">
-              <div className="flex items-center space-x-2">
-                <Input type="email" placeholder="Subscribe to our newsletter" className="max-w-[240px]" />
-                <Button type="submit" size="sm">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
+            <p className="text-center text-sm text-muted-foreground md:text-right">312 W. 2nd St, Casper, WY 82601</p>
           </div>
         </div>
       </div>
