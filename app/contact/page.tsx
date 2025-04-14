@@ -143,7 +143,7 @@ export default function ContactPage() {
                       <div className="flex flex-col items-center space-y-2 text-center">
                         <div className="relative h-20 w-20 overflow-hidden rounded-full">
                           <Image
-                            src="/placeholder.svg?height=80&width=80"
+                            src="/images/Khan.jpg"
                             alt="Furqan Khan"
                             width={80}
                             height={80}
@@ -159,10 +159,10 @@ export default function ContactPage() {
                             </a>
                           </p>
                           <div className="flex justify-center space-x-2 mt-2">
-                            <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+                            <Link href="https://www.linkedin.com/in/furkaan309/" target="_blank" rel="noreferrer">
                               <Linkedin className="h-4 w-4 text-slate-500 hover:text-primary" />
                             </Link>
-                            <Link href="https://twitter.com" target="_blank" rel="noreferrer">
+                            <Link href="#" target="_blank" rel="noreferrer">
                               <Twitter className="h-4 w-4 text-slate-500 hover:text-primary" />
                             </Link>
                           </div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                       <div className="flex flex-col items-center space-y-2 text-center">
                         <div className="relative h-20 w-20 overflow-hidden rounded-full">
                           <Image
-                            src="/placeholder.svg?height=80&width=80"
+                            src="/images/Eric.jpg"
                             alt="Eric Choi"
                             width={80}
                             height={80}
@@ -191,10 +191,10 @@ export default function ContactPage() {
                             </a>
                           </p>
                           <div className="flex justify-center space-x-2 mt-2">
-                            <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+                            <Link href="https://www.linkedin.com/in/ericchoi97/" target="_blank" rel="noreferrer">
                               <Linkedin className="h-4 w-4 text-slate-500 hover:text-primary" />
                             </Link>
-                            <Link href="https://twitter.com" target="_blank" rel="noreferrer">
+                            <Link href="#" target="_blank" rel="noreferrer">
                               <Twitter className="h-4 w-4 text-slate-500 hover:text-primary" />
                             </Link>
                           </div>

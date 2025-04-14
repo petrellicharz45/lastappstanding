@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-40 w-40 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/images/Khan.jpg"
                   alt="Furqan Khan"
                   width={160}
                   height={160}
@@ -141,7 +141,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-40 w-40 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/images/Eric.jpg"
                   alt="Eric Choi"
                   width={160}
                   height={160}
