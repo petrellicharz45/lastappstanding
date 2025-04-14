@@ -50,16 +50,16 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <div className="text-sm font-medium">Products</div>
             <nav className="flex flex-col space-y-2">
-              <Link href="/products" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 API Services
               </Link>
-              <Link href="/pricing" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Pricing
               </Link>
-              <Link href="/documentation" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Documentation
               </Link>
-              <Link href="/integrations" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Integrations
               </Link>
             </nav>
@@ -67,16 +67,16 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <div className="text-sm font-medium">Resources</div>
             <nav className="flex flex-col space-y-2">
-              <Link href="/documentation" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Documentation
               </Link>
-              <Link href="/guides" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Guides
               </Link>
-              <Link href="/api-reference" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 API Reference
               </Link>
-              <Link href="/support" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Support
               </Link>
             </nav>
@@ -93,9 +93,9 @@ export default function Footer() {
               <Link href="/security" className="text-sm text-muted-foreground hover:text-primary">
                 Security
               </Link>
-              <Link href="/compliance" className="text-sm text-muted-foreground hover:text-primary">
+              {/* <Link href="/compliance" className="text-sm text-muted-foreground hover:text-primary">
                 Compliance
-              </Link>
+              </Link> */}
             </nav>
           </div>
         </div>
