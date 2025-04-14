@@ -19,135 +19,141 @@ export default function PrivacyPolicyPage() {
 
       {/* Privacy Policy Content */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6 max-w-3xl">
-          <div className="prose dark:prose-invert max-w-none">
-            <h2>Introduction</h2>
-            <p>
-              LastAppStanding ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
-              explains how we collect, use, disclose, and safeguard your information when you visit our website or use
-              our services.
-            </p>
-            <p>
-              Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy,
-              please do not access the site or use our services.
-            </p>
+      <div className="container px-4 md:px-6 max-w-4xl py-12 space-y-10">
+      {/* Introduction */}
+      <section className="prose dark:prose-invert max-w-none">
+        <h1 className="text-2xl font-bold">Introduction</h1>
+        <p>
+          We are committed to protecting your privacy. This Privacy Policy explains how we collect, use,
+          disclose, and safeguard your information when you visit our website or use our services.
+        </p>
+        <p>
+          Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy,
+          please do not access the site or use our services.
+        </p>
+      </section>
 
-            <h2>Information We Collect</h2>
-            <p>
-              We collect information that you provide directly to us, information we obtain automatically when you use
-              our services, and information from third-party sources.
-            </p>
+      {/* Table Content */}
+      <section className="overflow-x-auto">
+        <table className="table-auto w-full border border-slate-300 dark:border-slate-700">
+          <thead className="bg-slate-100 dark:bg-slate-800">
+            <tr>
+              <th className="border px-4 py-2 text-left">Section</th>
+              <th className="border px-4 py-2 text-left">Details</th>
+            </tr>
+          </thead>
+          <tbody className="bg-white dark:bg-slate-900">
+            <tr>
+              <td className="border px-4 py-2">Information We Collect</td>
+              <td className="border px-4 py-2">From direct input, automatic collection, and third-party sources.</td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Information You Provide to Us</td>
+              <td className="border px-4 py-2">
+                When you:
+                <ul className="list-disc pl-6">
+                  <li>Create an account</li>
+                  <li>Fill out a form</li>
+                  <li>Subscribe to newsletter</li>
+                  <li>Contact support</li>
+                  <li>Participate in surveys/promotions</li>
+                  <li>Make purchases</li>
+                </ul>
+                Includes name, email, address, phone, payment info, etc.
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Information We Collect Automatically</td>
+              <td className="border px-4 py-2">
+                <ul className="list-disc pl-6">
+                  <li>IP address</li>
+                  <li>Device type & OS</li>
+                  <li>Browser type/settings</li>
+                  <li>Usage data & history</li>
+                  <li>Cookies & tracking tech</li>
+                  <li>API usage patterns/metrics</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">How We Use Your Information</td>
+              <td className="border px-4 py-2">
+                <ul className="list-disc pl-6">
+                  <li>Provide/improve services</li>
+                  <li>Process transactions</li>
+                  <li>Send updates/support messages</li>
+                  <li>Respond to inquiries</li>
+                  <li>Communicate offers/events</li>
+                  <li>Monitor trends/usage</li>
+                  <li>Address technical issues</li>
+                  <li>Fulfill legal obligations</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Sharing of Information</td>
+              <td className="border px-4 py-2">
+                Shared with:
+                <ul className="list-disc pl-6">
+                  <li>Service providers</li>
+                  <li>Business partners</li>
+                  <li>Affiliates/subsidiaries</li>
+                  <li>In business transactions</li>
+                  <li>When legally required</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Data Security</td>
+              <td className="border px-4 py-2">
+                Uses technical/organizational measures. No method is 100% secure.
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Your Choices</td>
+              <td className="border px-4 py-2">
+                <ul className="list-disc pl-6">
+                  <li><strong>Account Info:</strong> Can update via account</li>
+                  <li><strong>Marketing:</strong> Opt out via email instructions</li>
+                  <li><strong>Cookies:</strong> Disable via browser settings</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Children’s Privacy</td>
+              <td className="border px-4 py-2">
+                Not for children under 16. Data from minors will be deleted if discovered.
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">International Data Transfers</td>
+              <td className="border px-4 py-2">
+                Data may be stored in locations with different laws.
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">Changes to Privacy Policy</td>
+              <td className="border px-4 py-2">
+                May update the policy. Changes posted with a new date.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-            <h3>Information You Provide to Us</h3>
-            <p>We may collect information that you provide to us when you:</p>
-            <ul>
-              <li>Create an account or register for our services</li>
-              <li>Fill out a form on our website</li>
-              <li>Subscribe to our newsletter</li>
-              <li>Contact our customer support</li>
-              <li>Participate in surveys or promotions</li>
-              <li>Make payments or purchases</li>
-            </ul>
-            <p>
-              This information may include your name, email address, postal address, phone number, payment information,
-              and any other information you choose to provide.
-            </p>
-
-            <h3>Information We Collect Automatically</h3>
-            <p>
-              When you use our services, we may automatically collect certain information about your device and usage,
-              including:
-            </p>
-            <ul>
-              <li>IP address</li>
-              <li>Device type and operating system</li>
-              <li>Browser type and settings</li>
-              <li>Usage data and browsing history</li>
-              <li>Cookies and similar tracking technologies</li>
-              <li>API usage patterns and metrics</li>
-            </ul>
-
-            <h2>How We Use Your Information</h2>
-            <p>We may use the information we collect for various purposes, including to:</p>
-            <ul>
-              <li>Provide, maintain, and improve our services</li>
-              <li>Process transactions and send related information</li>
-              <li>Send administrative information, such as updates, security alerts, and support messages</li>
-              <li>Respond to your comments, questions, and requests</li>
-              <li>Communicate with you about products, services, offers, and events</li>
-              <li>Monitor and analyze trends, usage, and activities</li>
-              <li>Detect, prevent, and address technical issues</li>
-              <li>Comply with legal obligations</li>
-            </ul>
-
-            <h2>Sharing of Information</h2>
-            <p>We may share your information with the following categories of third parties:</p>
-            <ul>
-              <li>Service providers who perform services on our behalf</li>
-              <li>Business partners with whom we jointly offer products or services</li>
-              <li>Affiliates and subsidiaries</li>
-              <li>In connection with a business transaction (e.g., merger, acquisition, or sale)</li>
-              <li>When required by law or to protect rights and safety</li>
-            </ul>
-
-            <h2>Data Security</h2>
-            <p>
-              We implement appropriate technical and organizational measures to protect the security of your personal
-              information. However, please be aware that no method of transmission over the Internet or electronic
-              storage is 100% secure.
-            </p>
-
-            <h2>Your Choices</h2>
-            <p>You have certain choices regarding the information we collect and how it is used:</p>
-            <ul>
-              <li>
-                Account Information: You can update or correct your account information at any time by logging into your
-                account
-              </li>
-              <li>
-                Marketing Communications: You can opt out of receiving promotional emails by following the instructions
-                in those emails
-              </li>
-              <li>
-                Cookies: Most web browsers are set to accept cookies by default. You can usually choose to set your
-                browser to remove or reject cookies
-              </li>
-            </ul>
-
-            <h2>Children's Privacy</h2>
-            <p>
-              Our services are not directed to children under 16, and we do not knowingly collect personal information
-              from children under 16. If we learn we have collected personal information from a child under 16, we will
-              delete that information.
-            </p>
-
-            <h2>International Data Transfers</h2>
-            <p>
-              Your information may be transferred to, and maintained on, computers located outside of your state,
-              province, country, or other governmental jurisdiction where the data protection laws may differ.
-            </p>
-
-            <h2>Changes to This Privacy Policy</h2>
-            <p>
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
-              Privacy Policy on this page and updating the "Last updated" date.
-            </p>
-
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p>
-              LastAppStanding
-              <br />
-              312 W. 2nd St
-              <br />
-              Casper, WY 82601
-              <br />
-              Email: privacy@lastappstanding.com
-              <br />
-              Phone: +1 (307) 555-0123
-            </p>
-          </div>
-        </div>
+      {/* Contact Us */}
+      <section className="prose dark:prose-invert max-w-none">
+        <h2 className="text-2xl font-bold">Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <address className="not-italic">
+          LastAppStanding<br />
+          312 W. 2nd St<br />
+          Casper, WY 82601<br />
+          Email: <a href="mailto:privacy@lastappstanding.com" className="text-blue-700 hover:underline">privacy@lastappstanding.com</a><br />
+          Phone: +1 (307) 555-0123
+        </address>
+      </section>
+    </div>
       </section>
     </main>
   )

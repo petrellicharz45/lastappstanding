@@ -16,15 +16,15 @@ export default function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground">Powering the future with generative AI solutions.</p>
             <div className="flex space-x-4">
-              <Link href="https://twitter.com" target="_blank" rel="noreferrer">
+              <Link href="#" target="_blank" rel="noreferrer">
                 <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="https://github.com" target="_blank" rel="noreferrer">
+              <Link href="#" target="_blank" rel="noreferrer">
                 <Github className="h-5 w-5 text-muted-foreground hover:text-primary" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <Link href="https://www.linkedin.com/company/last-app-standing/" target="_blank" rel="noreferrer">
                 <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -39,10 +39,10 @@ export default function Footer() {
               <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">
                 Contact
               </Link>
-              <Link href="/careers" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Careers
               </Link>
-              <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                 Blog
               </Link>
             </nav>
